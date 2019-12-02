@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="main.css" />
+        <title>Cookie editor</title>
+    </head>
+    <body>
+        <div id="homework-container" class="container">
+            <h3 class="text-center">Редактор Cookie</h3>
+            <div id="filter-block">
+                Поиск cookie:
+                <input
+                    type="text"
+                    id="filter-name-input"
+                    placeholder="имя cookie"
+                />
+            </div>
+            <div id="add-block">
+                Добавить cookie:
+                <input
+                    type="text"
+                    id="add-name-input"
+                    placeholder="имя cookie"
+                /><br />
+                <input
+                    type="text"
+                    id="add-value-input"
+                    placeholder="значение cookie"
+                /><br />
+                <button id="add-button" class="btn btn-primary">
+                    Добавить cookie
+                </button>
+            </div>
+            <div id="list-block">
+                Доступные cookie:
+                <table id="list-table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>имя</th>
+                            <th>значение</th>
+                            <th>удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- tr добавлять сюда -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" src='app.js'></script>
+    </body>
+</html>
